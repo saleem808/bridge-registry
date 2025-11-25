@@ -5,17 +5,23 @@ defaultIsm:
 defaultHook:
   type: merkleTreeHook
 requiredHook:
-  owner: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
-  type: interchainGasPaymaster
-  beneficiary: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
-  oracleKey: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
-  overhead:
-    bsctestnet: 75000
-    igratestnet: 75000
-  oracleConfig:
-    bsctestnet:
-      gasPrice: "100000000"
-      tokenExchangeRate: "11000000000"
-      tokenDecimals: 18
+  type: aggregationHook
+  hooks:
+    - owner: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
+      type: protocolFee
+      beneficiary: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
+      maxProtocolFee: "100000000000000000000000000000000000"
+      protocolFee: "100000000000000000000000000000000000"
+    - owner: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
+      type: interchainGasPaymaster
+      beneficiary: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
+      oracleKey: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
+      overhead:
+        bsctestnet: 0
+      oracleConfig:
+        bsctestnet:
+          gasPrice: "100000000"
+          tokenExchangeRate: "10000000000"
+          tokenDecimals: 18
 proxyAdmin:
   owner: "0x1900c5b15268f13bb4e462f54f5edd6834c47348"
