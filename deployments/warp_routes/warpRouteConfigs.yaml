@@ -7449,7 +7449,7 @@ USDT/arbitrum-ethereum-optimism-polygon-prom:
       name: Tether USD
       standard: EvmHypSynthetic
       symbol: USDT
-USDT/bsc-kasples:
+USDT/bsc-kasplex:
   tokens:
     - addressOrDenom: "0xd2B21d5d074606307CD353A3641FC046eA007918"
       chainName: kasplextestnet
