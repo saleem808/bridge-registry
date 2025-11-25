@@ -4,15 +4,15 @@ tokens:
     decimals: 6
     symbol: USDC
     name: USD Coin
-    addressOrDenom: "0xea9374a2A7d3458a0e1FaC5Cef35B2F9713fBb54"
+    addressOrDenom: "0x8CE7256Bc35260Ab6CdFa7A0b128a7D4eD2CF02f"
     collateralAddressOrDenom: "0x7b225c27d66949D4f5541f118F7B948b0fc2aB51"
     connections:
-      - token: ethereum|bsctestnet|0x18e1EB3E004234790FDD0B930e751a3228d12b28
+      - token: ethereum|bsctestnet|0x6B603224dc5A2e777867e42c050E5095ffb0E76c
   - chainName: bsctestnet
     standard: EvmHypSynthetic
     decimals: 6
     symbol: USDC
     name: USD Coin
-    addressOrDenom: "0x18e1EB3E004234790FDD0B930e751a3228d12b28"
+    addressOrDenom: "0x6B603224dc5A2e777867e42c050E5095ffb0E76c"
     connections:
-      - token: ethereum|kasplextestnet|0xea9374a2A7d3458a0e1FaC5Cef35B2F9713fBb54
+      - token: ethereum|kasplextestnet|0x8CE7256Bc35260Ab6CdFa7A0b128a7D4eD2CF02f
