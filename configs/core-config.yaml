@@ -18,8 +18,13 @@ requiredHook:
       oracleKey: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
       overhead:
         bsctestnet: 0
+        kasplextestnet: 0
       oracleConfig:
         bsctestnet:
+          gasPrice: "100000000"
+          tokenExchangeRate: "10000000000"
+          tokenDecimals: 18
+        kasplextestnet:
           gasPrice: "100000000"
           tokenExchangeRate: "10000000000"
           tokenDecimals: 18
