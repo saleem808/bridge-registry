@@ -13,7 +13,7 @@ bsctestnet:
     threshold: 1
   proxyAdmin:
     owner: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
-    address: "0xd6Bc2afC74f04D953C3CB9055eB1aFf6094B3E44"
+    address: "0xFC31aE61939cD0dBC821BE14c12F1c2f3Be32666"
 kasplextestnet:
   type: collateral
   token: "0x7b225c27d66949D4f5541f118F7B948b0fc2aB51"
@@ -29,4 +29,4 @@ kasplextestnet:
     threshold: 1
   proxyAdmin:
     owner: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
-    address: "0xe8856a224A06d13549b9d6Ac2C411362E7cf8448"
+    address: "0x7af5C3b44aD887EE5a09102A56c5Ac20EC08B5c5"
