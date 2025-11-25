@@ -1,0 +1,18 @@
+tokens:
+  - chainName: kasplextestnet
+    standard: EvmHypCollateral
+    decimals: 6
+    symbol: USDC
+    name: USD Coin
+    addressOrDenom: "0xea9374a2A7d3458a0e1FaC5Cef35B2F9713fBb54"
+    collateralAddressOrDenom: "0x7b225c27d66949D4f5541f118F7B948b0fc2aB51"
+    connections:
+      - token: ethereum|bsctestnet|0x18e1EB3E004234790FDD0B930e751a3228d12b28
+  - chainName: bsctestnet
+    standard: EvmHypSynthetic
+    decimals: 6
+    symbol: USDC
+    name: USD Coin
+    addressOrDenom: "0x18e1EB3E004234790FDD0B930e751a3228d12b28"
+    connections:
+      - token: ethereum|kasplextestnet|0xea9374a2A7d3458a0e1FaC5Cef35B2F9713fBb54

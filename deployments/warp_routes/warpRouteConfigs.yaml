@@ -5909,6 +5909,25 @@ USDC/bsc-prom:
       name: USD Coin
       standard: EvmHypSynthetic
       symbol: USDC
+USDC/bsctestnet-kasplextest:
+  tokens:
+    - addressOrDenom: "0xea9374a2A7d3458a0e1FaC5Cef35B2F9713fBb54"
+      chainName: kasplextestnet
+      collateralAddressOrDenom: "0x7b225c27d66949D4f5541f118F7B948b0fc2aB51"
+      connections:
+        - token: ethereum|bsctestnet|0x18e1EB3E004234790FDD0B930e751a3228d12b28
+      decimals: 6
+      name: USD Coin
+      standard: EvmHypCollateral
+      symbol: USDC
+    - addressOrDenom: "0x18e1EB3E004234790FDD0B930e751a3228d12b28"
+      chainName: bsctestnet
+      connections:
+        - token: ethereum|kasplextestnet|0xea9374a2A7d3458a0e1FaC5Cef35B2F9713fBb54
+      decimals: 6
+      name: USD Coin
+      standard: EvmHypSynthetic
+      symbol: USDC
 USDC/coti-ethereum:
   tokens:
     - addressOrDenom: "0xEE2e85Df244e32d95d9f327D7a35Ba3d2d412225"
