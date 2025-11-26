@@ -11,7 +11,7 @@ requiredHook:
       type: protocolFee
       beneficiary: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
       maxProtocolFee: "100000000000000000000000000000000000"
-      protocolFee: "100000000000000000000000000000000000"
+      protocolFee: "1"
     - owner: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
       type: interchainGasPaymaster
       beneficiary: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
