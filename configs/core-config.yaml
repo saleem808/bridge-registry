@@ -1,32 +1,56 @@
-owner: "0x1900c5b15268f13bb4e462f54f5edd6834c47348"
-defaultIsm:
-  type: trustedRelayerIsm
-  relayer: "0x1900c5b15268f13bb4e462f54f5edd6834c47348"
 defaultHook:
+  address: "0x7DA07bC8f8002A3b864a2C3E9994B2eaf4a7999C"
   type: merkleTreeHook
+defaultIsm:
+  address: "0xe7386D8B5bfDbC571bf0508687DE06552E4d1c95"
+  relayer: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
+  type: trustedRelayerIsm
+interchainAccountRouter:
+  address: "0x76D0492907c8Cb0039C090C044767289B2cb8DFF"
+  commitmentIsm:
+    address: "0x8D53870dFce2C70b19D4dBaD27C10BEDD69B8c79"
+    owner: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
+    type: offchainLookupIsm
+    urls:
+      - https://commitment-read-ism.hyperlane.xyz
+  hook: "0x0000000000000000000000000000000000000000"
+  interchainSecurityModule:
+    address: "0x76D0492907c8Cb0039C090C044767289B2cb8DFF"
+    isms: {}
+    owner: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
+    type: interchainAccountRouting
+  mailbox: "0xaf27F006C81fdE2D876282Cd6Cb370338d73B246"
+  owner: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
+  remoteRouters: {}
+owner: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
+proxyAdmin:
+  address: "0xFC31aE61939cD0dBC821BE14c12F1c2f3Be32666"
+  owner: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
 requiredHook:
-  type: aggregationHook
+  address: "0xBd8449ee8A3454ce69d29d560B336f36Bcaa50db"
   hooks:
-    - owner: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
-      type: protocolFee
+    - address: "0x1B46Eb2eEF00C80466B2F6586d551734B8e2ab79"
       beneficiary: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
       maxProtocolFee: "100000000000000000000000000000000000"
-      protocolFee: "100000000000000000000000000000000000"
-    - owner: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
-      type: interchainGasPaymaster
+      owner: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
+      protocolFee: "1"
+      type: protocolFee
+    - address: "0xD5c93754d0f523aCF9f143Bb09D6869149D27A52"
       beneficiary: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
+      oracleConfig:
+        bsctestnet:
+          gasPrice: "100000000"
+          tokenDecimals: 18
+          tokenExchangeRate: "10000000000"
+        kasplextestnet:
+          gasPrice: "100000000"
+          tokenDecimals: 18
+          tokenExchangeRate: "10000000000"
       oracleKey: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
       overhead:
         bsctestnet: 0
         kasplextestnet: 0
-      oracleConfig:
-        bsctestnet:
-          gasPrice: "100000000"
-          tokenExchangeRate: "10000000000"
-          tokenDecimals: 18
-        kasplextestnet:
-          gasPrice: "100000000"
-          tokenExchangeRate: "10000000000"
-          tokenDecimals: 18
-proxyAdmin:
-  owner: "0x1900c5b15268f13bb4e462f54f5edd6834c47348"
+      owner: "0x1900c5B15268F13BB4e462f54F5EDD6834C47348"
+      type: interchainGasPaymaster
+  type: aggregationHook
+
